@@ -26,3 +26,4 @@ spec:
     name: flux-system
   path: ./apps/namespace-scope/litmus-portal-crds.yml
   prune: true
+  validation: client
