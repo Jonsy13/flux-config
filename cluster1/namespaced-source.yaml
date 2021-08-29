@@ -13,17 +13,17 @@ spec:
   path: ./apps/namespace-scope/litmus-ns-scoped-litmus-portal-manifest.yml
   prune: true
   validation: client
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
-kind: Kustomization
-metadata:
-  name: crds-install
-  namespace: flux-system
-spec:
-  interval: 10m0s
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-  path: ./apps/namespace-scope/litmus-portal-crds.yml
-  prune: true
-  validation: client
+# ---
+# apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+# kind: Kustomization
+# metadata:
+#   name: crds-install
+#   namespace: flux-system
+# spec:
+#   interval: 10m0s
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system
+#   path: ./apps/namespace-scope/litmus-portal-crds.yml
+#   prune: true
+#   validation: client
