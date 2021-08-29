@@ -536,7 +536,7 @@ spec:
     spec:
       containers:
         - name: graphql-server
-          image: jonsy13/litmusportal-server:master-bfaf5cec-1630094247
+          image: jonsy13/litmusportal-server:master-bfaf5cec-1630094247 # {"$imagepolicy": "flux-system:server-image-repository"}
           envFrom:
             - configMapRef:
                 name: litmus-portal-admin-config

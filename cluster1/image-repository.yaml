@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: server-image-repository
+  namespace: flux-system
+spec:
+  image: docker.io/jonsy13/litmusportal-server
+  interval: 1m0s
