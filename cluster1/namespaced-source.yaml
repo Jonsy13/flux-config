@@ -5,25 +5,25 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  # dependsOn:
-  #   - name: crds-install
+  dependsOn:
+    - name: crds-install
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./apps/namespace-scope/litmus-ns-scoped-litmus-portal-manifest.yml
+  path: ./apps/namespace-scope/
   prune: true
   validation: client
-# ---
-# apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
-# kind: Kustomization
-# metadata:
-#   name: crds-install
-#   namespace: flux-system
-# spec:
-#   interval: 10m0s
-#   sourceRef:
-#     kind: GitRepository
-#     name: flux-system
-#   path: ./apps/namespace-scope/litmus-portal-crds.yml
-#   prune: true
-#   validation: client
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: crds-install
+  namespace: flux-system
+spec:
+  interval: 10m0s
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: ./apps/crds/
+  prune: true
+  validation: client
