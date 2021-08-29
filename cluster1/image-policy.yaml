@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: server-image-repository
   filterTags:
-    pattern: "^main-[a-f0-9]+-(?P<ts>[0-9]+)"
+    pattern: "^master-[a-f0-9]+-(?P<ts>[0-9]+)"
     extract: "$ts"
   policy:
     numerical:
