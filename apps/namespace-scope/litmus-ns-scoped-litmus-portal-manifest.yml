@@ -254,12 +254,12 @@ rules:
     # ********************************************************************
     # Permissions needed for creation and discovery of chaos experiments
     # ********************************************************************
-
+  - apiGroups: [""]
     # The helper pods are created by experiment to perform the actual chaos injection ...
     # ... for a period of chaos duration
 
     # for creating and deleting the helper or target app pod and events by experiment
-  - apiGroups: [""]
+
     resources: [pods]
     verbs: [create, delete, deletecollection]
     # for creating and monitoring the events for chaos operations
@@ -506,7 +506,7 @@ spec:
     spec:
       containers:
         - name: graphql-server
-          image: jonsy13/litmusportal-server:master-bfaf5cec-1630294850 # {"$imagepolicy": "flux-system:server-image-policy"}
+          image: jonsy13/litmusportal-server:master-bfaf5cec-1630297089 # {"$imagepolicy": "flux-system:server-image-policy"}
           envFrom:
             - configMapRef:
                 name: litmus-portal-admin-config
