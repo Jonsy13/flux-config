@@ -467,7 +467,7 @@ data:
   JWT_SECRET: "litmus-portal@123"
   DB_USER: "admin"
   DB_PASSWORD: "1234"
-  VERSION: "2.0.0-main-a8950ae3"
+  VERSION: "2.0.0-main-0d0c52ed"
 ---
 apiVersion: apps/v1
 kind: Deployment
