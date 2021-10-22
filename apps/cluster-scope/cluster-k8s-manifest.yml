@@ -554,9 +554,9 @@ spec:
             - name: PORTAL_SCOPE
               value: "cluster"
             - name: SUBSCRIBER_IMAGE
-              value: "jonsy13/clc-subscriber:2.0.0-main-2f5c3e3d
+              value: "jonsy13/clc-subscriber:2.0.0-main-2f5c3e3d"
             - name: EVENT_TRACKER_IMAGE
-              value: "jonsy13/clc-event-tracker:2.0.0-main-2f5c3e3d
+              value: "jonsy13/clc-event-tracker:2.0.0-main-2f5c3e3d"
             - name: ARGO_WORKFLOW_CONTROLLER_IMAGE
               value: "litmuschaos/workflow-controller:v2.11.0"
             - name: ARGO_WORKFLOW_EXECUTOR_IMAGE
